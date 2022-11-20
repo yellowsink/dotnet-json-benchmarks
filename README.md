@@ -52,6 +52,10 @@ Generated with LibreOffice, see attached ODS file.
 
 ![How much better NativeAOT is as the run count changes](graphs/adv.png)
 
+I am quite stupid - please disregard the %s on the labels here.
+
+It's 15x faster not 15% faster.
+
 ![How much faster each run becomes as the run count changes: standard](graphs/overhead-standard.png)
 ![How much faster each run becomes as the run count changes: metasrcgen](graphs/overhead-metasrcgen.png)
 ![How much faster each run becomes as the run count changes: nativeaot](graphs/overhead-nativeaot.png)
