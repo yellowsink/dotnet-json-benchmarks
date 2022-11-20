@@ -1,0 +1,31 @@
+Benchmark 1: Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 50
+  Time (mean ± σ):     474.0 ms ±  17.1 ms    [User: 436.0 ms, System: 99.3 ms]
+  Range (min … max):   449.9 ms … 503.0 ms    10 runs
+ 
+Benchmark 2: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 50
+  Time (mean ± σ):     424.9 ms ±  26.4 ms    [User: 388.6 ms, System: 91.8 ms]
+  Range (min … max):   399.5 ms … 475.9 ms    10 runs
+ 
+Benchmark 3: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 50
+  Time (mean ± σ):     217.0 ms ±   5.0 ms    [User: 179.7 ms, System: 47.6 ms]
+  Range (min … max):   212.0 ms … 228.5 ms    13 runs
+ 
+Benchmark 4: Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 50
+  Time (mean ± σ):     679.8 ms ±  44.3 ms    [User: 718.0 ms, System: 80.7 ms]
+  Range (min … max):   607.5 ms … 742.8 ms    10 runs
+ 
+Benchmark 5: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 50
+  Time (mean ± σ):     701.2 ms ±  91.3 ms    [User: 744.6 ms, System: 82.7 ms]
+  Range (min … max):   625.5 ms … 946.7 ms    10 runs
+ 
+Benchmark 6: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 50
+  Time (mean ± σ):     319.9 ms ±  16.3 ms    [User: 329.2 ms, System: 18.8 ms]
+  Range (min … max):   297.5 ms … 346.6 ms    10 runs
+ 
+Summary
+  'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 50' ran
+    1.47 ± 0.08 times faster than 'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 50'
+    1.96 ± 0.13 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 50'
+    2.18 ± 0.09 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 50'
+    3.13 ± 0.22 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 50'
+    3.23 ± 0.43 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 50'

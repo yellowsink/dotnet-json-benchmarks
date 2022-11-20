@@ -1,0 +1,31 @@
+Benchmark 1: Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 1
+  Time (mean ± σ):     192.7 ms ±  10.1 ms    [User: 116.5 ms, System: 58.2 ms]
+  Range (min … max):   178.3 ms … 210.0 ms    16 runs
+ 
+Benchmark 2: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 1
+  Time (mean ± σ):     160.7 ms ±   8.4 ms    [User: 86.4 ms, System: 55.4 ms]
+  Range (min … max):   146.4 ms … 173.3 ms    17 runs
+ 
+Benchmark 3: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 1
+  Time (mean ± σ):      12.6 ms ±   1.6 ms    [User: 15.7 ms, System: 5.3 ms]
+  Range (min … max):     9.7 ms …  17.2 ms    187 runs
+ 
+Benchmark 4: Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 1
+  Time (mean ± σ):     203.9 ms ±  13.4 ms    [User: 135.9 ms, System: 58.2 ms]
+  Range (min … max):   181.0 ms … 226.4 ms    14 runs
+ 
+Benchmark 5: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 1
+  Time (mean ± σ):     178.6 ms ±  10.4 ms    [User: 110.9 ms, System: 59.7 ms]
+  Range (min … max):   162.2 ms … 205.7 ms    17 runs
+ 
+Benchmark 6: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 1
+  Time (mean ± σ):      16.9 ms ±   1.9 ms    [User: 21.7 ms, System: 6.0 ms]
+  Range (min … max):    13.3 ms …  25.4 ms    208 runs
+ 
+Summary
+  'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 1' ran
+    1.34 ± 0.23 times faster than 'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 1'
+   12.75 ± 1.77 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 1'
+   14.17 ± 2.00 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 1'
+   15.29 ± 2.12 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 1'
+   16.18 ± 2.33 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 1'

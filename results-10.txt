@@ -1,0 +1,31 @@
+Benchmark 1: Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 10
+  Time (mean ± σ):     247.0 ms ±  15.8 ms    [User: 161.7 ms, System: 66.7 ms]
+  Range (min … max):   225.5 ms … 285.2 ms    11 runs
+ 
+Benchmark 2: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 10
+  Time (mean ± σ):     237.3 ms ±  32.8 ms    [User: 149.9 ms, System: 70.3 ms]
+  Range (min … max):   213.9 ms … 335.3 ms    12 runs
+ 
+Benchmark 3: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 10
+  Time (mean ± σ):      53.7 ms ±   3.4 ms    [User: 47.6 ms, System: 16.0 ms]
+  Range (min … max):    47.9 ms …  63.1 ms    46 runs
+ 
+Benchmark 4: Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 10
+  Time (mean ± σ):     326.0 ms ±  12.8 ms    [User: 257.8 ms, System: 65.1 ms]
+  Range (min … max):   311.3 ms … 348.6 ms    10 runs
+ 
+Benchmark 5: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 10
+  Time (mean ± σ):     306.3 ms ±  12.8 ms    [User: 237.3 ms, System: 66.5 ms]
+  Range (min … max):   293.7 ms … 335.6 ms    10 runs
+ 
+Benchmark 6: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 10
+  Time (mean ± σ):      75.5 ms ±   4.6 ms    [User: 79.6 ms, System: 9.3 ms]
+  Range (min … max):    67.3 ms …  87.0 ms    37 runs
+ 
+Summary
+  'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 10' ran
+    1.41 ± 0.12 times faster than 'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 10'
+    4.42 ± 0.67 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 10'
+    4.60 ± 0.42 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 10'
+    5.71 ± 0.43 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 10'
+    6.07 ± 0.45 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 10'

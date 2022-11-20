@@ -1,0 +1,31 @@
+Benchmark 1: Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 100
+  Time (mean ± σ):     683.5 ms ±  91.2 ms    [User: 678.7 ms, System: 124.2 ms]
+  Range (min … max):   626.2 ms … 931.1 ms    10 runs
+ 
+Benchmark 2: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 100
+  Time (mean ± σ):     647.9 ms ±  58.3 ms    [User: 653.0 ms, System: 131.2 ms]
+  Range (min … max):   568.1 ms … 720.1 ms    10 runs
+ 
+Benchmark 3: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 100
+  Time (mean ± σ):     420.7 ms ±   5.9 ms    [User: 337.3 ms, System: 93.9 ms]
+  Range (min … max):   411.1 ms … 430.4 ms    10 runs
+ 
+Benchmark 4: Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 100
+  Time (mean ± σ):      1.034 s ±  0.052 s    [User: 1.108 s, System: 0.094 s]
+  Range (min … max):    0.961 s …  1.138 s    10 runs
+ 
+Benchmark 5: MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 100
+  Time (mean ± σ):     953.6 ms ±  40.1 ms    [User: 1025.4 ms, System: 93.8 ms]
+  Range (min … max):   868.7 ms … 995.5 ms    10 runs
+ 
+Benchmark 6: NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 100
+  Time (mean ± σ):     654.0 ms ±  43.4 ms    [User: 648.1 ms, System: 33.2 ms]
+  Range (min … max):   619.3 ms … 768.7 ms    10 runs
+ 
+Summary
+  'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT sync dataset.json 100' ran
+    1.54 ± 0.14 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen sync dataset.json 100'
+    1.55 ± 0.11 times faster than 'NativeAOT/bin/Release/net7.0/linux-x64/native/NativeAOT async dataset.json 100'
+    1.62 ± 0.22 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard sync dataset.json 100'
+    2.27 ± 0.10 times faster than 'MetaSrcGen/bin/Release/net7.0/linux-x64/publish/MetaSrcGen async dataset.json 100'
+    2.46 ± 0.13 times faster than 'Standard/bin/Release/net7.0/linux-x64/publish/Standard async dataset.json 100'
